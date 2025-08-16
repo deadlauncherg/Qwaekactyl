@@ -75,15 +75,15 @@ We are not responsible for any damages.
 1. You have to install some packages
 
 ```bash
-$ apt install nginx
-$ sudo apt install certbot
-$ sudo apt install -y python3-certbot-nginx
+ apt install nginx
+ sudo apt install certbot
+ sudo apt install -y python3-certbot-nginx
 ````
 
 2. When these packages are installed, You have to add ssl to your domain :- using following commands
 
 ```bash
-$ certbot certonly --nginx -d example.com
+ certbot certonly --nginx -d example.com
 ```
 > Now  type 1 and enter to get ssl
 
@@ -91,8 +91,8 @@ $ certbot certonly --nginx -d example.com
 
    > use this command first
    ```bash
-   $ systemctl stop nginx
-   $ nano /etc/nginx/sites-enabled/imp.conf
+    systemctl stop nginx
+    nano /etc/nginx/sites-enabled/imp.conf
    ```
    > using this cmd a blank file will open for edit and now paste the give config by editing your domain
 # Nginx Proxy Config
@@ -131,14 +131,14 @@ location / {
 4. Now your config is setup now u have to run nginx
 
 ```bash
-$ systemctl start nginx
+ systemctl start nginx
 ```
 > Doing this you have successfully setup your domain ssl and point your domain to running client panel
 > Note :- make sure you have point your domain to your vps ip.
 
 # Start Command
 ```bash
-$ npm start
+ npm start
 ```
 
 <hr>
